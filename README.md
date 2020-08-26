@@ -9,3 +9,7 @@ npm run dev
 
 ## 构建文档
 npm run build
+
+
+## License
+[MIT](./LICENSE)

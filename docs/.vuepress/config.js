@@ -9,7 +9,25 @@ module.exports = {
             { text: '组件库', link: '/components/' },
             { text: '主题', link: '/theme/' },
         ],
-        sidebar: 'auto',
-        lastUpdated: 'Last Updated'
+        sidebar: {
+            '/components/': [{
+                title: '组件库',
+                collapsable: false,
+                children: [
+                    '',
+                    'layout',
+                    'header'
+                ]
+            }],
+            '/theme/': [{
+                title: '主题',
+                collapsable: false,
+                children: [
+                    '',
+                ]
+            }]
+        },
+        lastUpdated: '最近更新',
+        repo: 'https://github.com/ikevinclub/tui'
     }
 }
