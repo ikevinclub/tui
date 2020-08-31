@@ -15,7 +15,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '',
-                    'layout',
+                    // 'layout',
                     'header'
                 ]
             }],
