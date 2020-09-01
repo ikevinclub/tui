@@ -37,6 +37,7 @@ input{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border: none;
 }
 button{
 	border: none;

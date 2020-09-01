@@ -29,5 +29,11 @@ module.exports = {
         },
         lastUpdated: '最近更新',
         repo: 'https://github.com/ikevinclub/tui'
-    }
+    },
+    head: [
+        ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }]
+    ],
+    plugins: [
+        'demo-container'
+    ]
 }
