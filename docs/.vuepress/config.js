@@ -16,7 +16,11 @@ module.exports = {
                 children: [
                     '',
                     // 'layout',
-                    'header'
+                    'header',
+                    'button',
+                    'image',
+                    'tag',
+                    'title'
                 ]
             }],
             '/theme/': [{

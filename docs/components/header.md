@@ -1,33 +1,32 @@
 # header
 
-## 布局a
+## type-a
 ::: demo
 ```html
-<html> <!-- 删除html标签 -->
-    <div class="tui-header type-a">
-        <div class="tui-header-logo">
-            <img src="" alt="" name="logo">
-        </div>
-        <div class="tui-header-nav">
-            <ul>
-                <li>
-                    <a href="">首页</a>
-                </li>
-                <li>
-                    <a>一级菜单</a>
-                    <ul>
-                        <li>
-                            <a href="">二级菜单</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="active">
-                    <a href="">一级菜单</a>
-                </li>
-            </ul>
-        </div>
+<div class="tui-header type-a">
+    <div class="tui-header-logo">
+        <img src="" alt="" name="logo">
     </div>
-</html> <!-- 删除html标签 -->
+    <div class="tui-header-nav">
+        <ul>
+            <li>
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a>一级菜单</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="">一级菜单</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <style>
 .tui-header.type-a {
     display: flex;
@@ -114,36 +113,35 @@
 ```
 :::
 
-## 布局b
+## type-b
 
 ::: demo
 ```html
-<html> <!-- 删除html标签 -->
-    <div class="tui-header type-b">
-        <div class="tui-header-logo">
-            <img src="" alt="" name="logo">
-        </div>
-        <div class="tui-header-nav">
-            <ul>
-                <li>
-                    <a href="">首页</a>
-                </li>
-                <li>
-                    <a>一级菜单</a>
-                    <ul>
-                        <li>
-                            <a href="">二级菜单</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="active">
-                    <a href="">一级菜单</a>
-                </li>
-            </ul>
-            <input type="text" placeholder="搜索">
-        </div>
+<div class="tui-header type-b">
+    <div class="tui-header-logo">
+        <img src="" alt="" name="logo">
     </div>
-</html> <!-- 删除html标签 -->
+    <div class="tui-header-nav">
+        <ul>
+            <li>
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a>一级菜单</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="">一级菜单</a>
+            </li>
+        </ul>
+        <input type="text" placeholder="搜索">
+    </div>
+</div>
+
 <style>
 .tui-header.type-b {
     max-width: 1200px;
@@ -243,6 +241,246 @@
 }
 .tui-header.type-b .tui-header-nav input:focus {
     width: 160px;
+}
+</style>
+```
+:::
+
+## type-c
+
+::: demo
+```html
+<div class="tui-header type-c">
+    <div class="tui-header-logo">
+        <img src="" alt="" name="logo">
+    </div>
+    <div class="tui-header-nav">
+        <ul>
+            <li>
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a>一级菜单</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="">一级菜单</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tui-header-info">
+        <div class="tui-header-info-date">2020年9月30日</div>
+        <div class="tui-header-info-weather">小雨</div>
+    </div>
+</div>
+
+<style>
+.tui-header.type-c {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    padding: 10px;
+    background-color: #3ca4e4;
+}
+.tui-header.type-c .tui-header-logo {
+    width: 140px;
+    height: 80px;
+    margin-right: 20px;
+    /* 替换start */
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwcHgiIGhlaWdodD0iODBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI1MDAiPjx0ZXh0IGZpbGw9IiNGRkZGRkYiPjx0c3BhbiB4PSIzNSIgeT0iNDkiPkxPR088L3RzcGFuPjwvdGV4dD48L2c+PC9zdmc+) center no-repeat;
+    border: 1px dashed #fff;
+    /* 替换end */
+}
+.tui-header.type-c .tui-header-nav {
+    flex: 1;
+}
+.tui-header.type-c .tui-header-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.tui-header.type-c .tui-header-nav > ul {
+    width: 100%;
+    display: flex;
+}
+.tui-header.type-c .tui-header-nav > ul > li a {
+    display: block;
+    padding: 0.5em 0.5em;
+    font-size: 14px;
+    color: #2C3E50;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+.tui-header.type-c .tui-header-nav > ul > li > a {
+    border-radius: 3px;
+    padding: 0.5em 1.5em;
+}
+.tui-header.type-c .tui-header-nav > ul > li a:hover {
+    background-color: #47b4f7;
+    text-decoration: none !important;
+}
+.tui-header.type-c .tui-header-nav > ul > li.active {
+    box-shadow: 0 2px 0 #fff
+}
+.tui-header.type-c .tui-header-nav > ul > li.active > a {
+    color: #fff;
+}
+.tui-header.type-c .tui-header-nav > ul > li > a + ul {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    min-width: 150px; 
+    padding: 5px 0;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    transition: all 0.2s ease 0.3s;
+    transform-origin: 0% 0%;
+    transform: rotateX(90deg);
+}
+.tui-header.type-c .tui-header-nav > ul > li a:not([href])::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    right: 4px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTBweCIgaGVpZ2h0PSIxMHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSI+PHBvbHlsaW5lIHN0cm9rZT0iIzJDM0U1MCIgcG9pbnRzPSIwLjUgMy41IDUgNi41IDkuNSAzLjUiPjwvcG9seWxpbmU+PC9nPjwvc3ZnPg==);
+    transition: all 0.2s ease 0.3s;
+}
+.tui-header.type-c .tui-header-nav > ul > li:hover a:not([href])::after {
+    transform: rotate(180deg);
+}
+.tui-header.type-c .tui-header-nav > ul > li:hover > ul {
+    visibility: visible;
+    transform: rotateX(0deg);
+}
+.tui-header.type-c .tui-header-info {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+.tui-header.type-c .tui-header-info > div + div {
+    margin-left: 10px;
+}
+</style>
+```
+:::
+
+## type-d
+::: demo
+```html
+<div class="tui-header type-d">
+    <div class="tui-header-logo">
+        <img src="" alt="" name="logo">
+    </div>
+    <div class="tui-header-nav">
+        <ul>
+            <li>
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a>一级菜单</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="">一级菜单</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.tui-header.type-d {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+    padding: 0 10px;
+    background-color: #3ca4e4;
+}
+.tui-header.type-d .tui-header-logo {
+    width: 140px;
+    height: 80px;
+    margin-right: 20px;
+    /* 替换start */
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwcHgiIGhlaWdodD0iODBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI1MDAiPjx0ZXh0IGZpbGw9IiNGRkZGRkYiPjx0c3BhbiB4PSIzNSIgeT0iNDkiPkxPR088L3RzcGFuPjwvdGV4dD48L2c+PC9zdmc+) center no-repeat;
+    border: 1px dashed #fff;
+    /* 替换end */
+}
+.tui-header.type-d .tui-header-nav {
+    margin-left: auto;
+}
+.tui-header.type-d .tui-header-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.tui-header.type-d .tui-header-nav > ul {
+    display: flex;
+}
+.tui-header.type-d .tui-header-nav > ul > li a {
+    display: block;
+    padding: 0.5em 0.5em;
+    font-size: 14px;
+    color: #2C3E50;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+.tui-header.type-d .tui-header-nav > ul > li > a {
+    border-radius: 3px;
+    padding: 0.5em 1.5em;
+}
+.tui-header.type-d .tui-header-nav > ul > li a:hover {
+    background-color: #47b4f7;
+    text-decoration: none !important;
+}
+.tui-header.type-d .tui-header-nav > ul > li.active {
+    box-shadow: 0 2px 0 #fff
+}
+.tui-header.type-d .tui-header-nav > ul > li.active > a {
+    color: #fff;
+}
+.tui-header.type-d .tui-header-nav > ul > li > a + ul {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    min-width: 150px; 
+    padding: 5px 0;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    transition: all 0.2s ease 0.3s;
+    transform-origin: 0% 0%;
+    transform: rotateX(90deg);
+}
+.tui-header.type-d .tui-header-nav > ul > li a:not([href])::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    right: 4px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTBweCIgaGVpZ2h0PSIxMHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSI+PHBvbHlsaW5lIHN0cm9rZT0iIzJDM0U1MCIgcG9pbnRzPSIwLjUgMy41IDUgNi41IDkuNSAzLjUiPjwvcG9seWxpbmU+PC9nPjwvc3ZnPg==);
+    transition: all 0.2s ease 0.3s;
+}
+.tui-header.type-d .tui-header-nav > ul > li:hover a:not([href])::after {
+    transform: rotate(180deg);
+}
+.tui-header.type-d .tui-header-nav > ul > li:hover > ul {
+    visibility: visible;
+    transform: rotateX(0deg);
 }
 </style>
 ```
